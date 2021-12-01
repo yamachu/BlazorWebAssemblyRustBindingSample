@@ -1,1 +1,11 @@
 ﻿<h1>Rust Binding Sample</h1>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        var result = Allocation(out var tmpPtr);
+        Console.WriteLine(string.Join(',', result));
+        Dealloc(ref tmpPtr);
+    }
+}
