@@ -1,0 +1,3 @@
+sys_includes = ["stdarg.h", "stdbool.h", "stdint.h"]
+no_includes = true # stdlib.h is not found on llvm v12...
+cpp_compat = true
