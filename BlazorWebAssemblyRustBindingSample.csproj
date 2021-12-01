@@ -11,4 +11,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <NativeFileReference Include="Native/rust/target/wasm32-unknown-emscripten/release/libsample.a" />
+  </ItemGroup>
 </Project>
